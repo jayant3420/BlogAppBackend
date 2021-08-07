@@ -9,7 +9,6 @@ const PORT = process.env.PORT || 3001;
 //HTTP logger
 app.use(morgan("tiny"));
 app.use(express.json());
-app.use(cors());
 app.use("/home", routerHome);
 app.use("/bollywood", routerBollywood);
 app.use("/reactblog", routerReactBlog);
