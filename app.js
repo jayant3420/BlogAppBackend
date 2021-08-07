@@ -13,7 +13,7 @@ app.use("/home", routerHome);
 app.use("/bollywood", routerBollywood);
 app.use("/reactblog", routerReactBlog);
 
-app.use(express.static("index.html"));
+// app.use(express.static("index.html"));
 
 app.get("/", (req, res) => {
   res.send("Welcome to BlogApp");
