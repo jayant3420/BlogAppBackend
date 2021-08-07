@@ -5,7 +5,6 @@ const routerHome = require("./routes/home");
 const routerBollywood = require("./routes/bollywood");
 const routerReactBlog = require("./routes/reactblog");
 const PORT = process.env.PORT || 3001;
-const cors = require("cors");
 
 //HTTP logger
 app.use(morgan("tiny"));
