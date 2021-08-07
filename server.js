@@ -15,6 +15,10 @@ app.use("/home", routerHome);
 app.use("/bollywood", routerBollywood);
 app.use("/reactblog", routerReactBlog);
 
+app.get("/", (req, res) => {
+  res.send("Welcome to BlogApp");
+});
+
 app.listen(PORT, () => {
   console.log(`Server running at port ${PORT}`);
 });
