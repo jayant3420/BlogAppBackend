@@ -7,13 +7,13 @@ const routerReactBlog = require("./routes/reactblog");
 const PORT = process.env.PORT || 3001;
 
 //HTTP logger
-app.use(morgan("tiny"));
-app.use(express.json());
 app.use((req, res, next) => {
   res.setHeader("Allow-Control-Allow-Origin", "*");
   res.setHeader("Access-Control-Allow-Headers", "*");
   next();
 });
+app.use(morgan("tiny"));
+app.use(express.json());
 app.use("/home", routerHome);
 app.use("/bollywood", routerBollywood);
 app.use("/reactblog", routerReactBlog);
